@@ -1,0 +1,180 @@
+*{
+  font-family: sans-serif;
+  padding:0;
+  margin:0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper{
+  width: 95%;
+}
+
+.site-navigation{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  background-color: #2f2d2d;
+  width: 100%;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.site-sections{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.site-sections > a{
+  flex-grow: 1;
+  margin-right:5px;
+  margin-left:5px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #104d88;
+  padding: 3px 0;
+}
+
+.site-image{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.site-image > :first-child{
+  width: 100%;
+}
+
+.site-grids{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.site-grids > *{
+  height: 200px;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.site-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #2f2d2d;
+  width: 100%;
+  color:white;
+  font-weight:bold;
+  margin-top: 20px;
+}
+
+.site-footer > :first-child > a{
+  color:white;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.site-footer > :last-child{
+  margin-right: 10px;
+}
+
+.site-footer > :first-child{
+  margin-left: 10px;
+}
+
+.site-bio,
+.site-clothes-marketing-bio{
+  padding: 8px;
+}
+
+.site-bio > :first-child,
+.site-clothes-marketing-bio > :first-child{
+  direction: rtl;
+  margin-bottom: 8px;
+}
+
+.site-reviews{
+  padding:8px;
+}
+
+.site-reviews > :first-child{
+  direction: rtl;
+  margin-bottom: 5px;
+}
+
+.site-reviews-content{
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+.site-reviews-content > :last-child{
+  width:50%;
+  height: 100%;
+}
+
+
+.site-reviews-content > :first-child{
+  margin-right: 5px;
+  height:100%;
+  overflow: scroll;
+}
+
+.site-reviews-content > :first-child::-webkit-scrollbar {
+  display: none;
+}
+
+.site-reviews-content > :last-child > img{
+  width:100%;
+  height: 100%;
+}
+
+.site-reviews-content > *{
+  flex-grow:1;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.our-customers{
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #ddd;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.our-customers > *{
+  margin:0px 8px;
+  font-weight: bold;
+}
+
+.our-customers > :first-child{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.video-container > video{
+  width:100% !important;
+  height: 100%;
+}
