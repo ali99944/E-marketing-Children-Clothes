@@ -19,7 +19,24 @@
     </div>
 
     <div class="wrapper">
-      <h1>Products</h1>
+      <div class="products-wrapper">
+        <div class="products-wrapper-header">
+          <div>
+            <div class="select">
+              <select id="standard-select" onchange="loadSelectedProducts()">
+                <option value="boys">اولاد</option>
+                <option value="girls">بنات</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+            <span>نوع الملابس</span>
+          </div>
+          <h1>منتجاتنا</h1>
+        </div>
+        <div class="products-grid">
+        
+        </div>
+      </div>
     </div>
 
     <div class="site-footer">
@@ -32,5 +49,7 @@
       </div>
       <p>جميع الحقوق محفوظة</p>
     </div>
+
+    <script src="/scripts/products.js"></script>
   </body>
 </html>
