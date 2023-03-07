@@ -2,32 +2,32 @@ const workers = [
   {
     name:'احمد ابراهيم',
     age:30,
-    image:'/images/workers/ahmed.png',
+    image:'../images/workers/ahmed.png',
     position:'نائب المدير'
   },{
     name:'محمد عبدالله',
     age:27,
-    image:'/images/workers/mohammed.png',
+    image:'../images/workers/mohammed.png',
     position:'رئيس قسم التحرير'
   },{
     name:'يوسف عمران',
     age:26,
-    image:'/images/workers/yousef.png',
+    image:'../images/workers/yousef.png',
     position:'مطور الموقع'
   },{
     name:'اروى احمد',
     age:28,
-    image:'/images/workers/arwa.png',
+    image:'../images/workers/arwa.png',
     position:'مختبرة امان الموقع'
   },{
     name:'مريم احمد',
     age:25,
-    image:'/images/workers/mariem.png',
+    image:'../images/workers/mariem.png',
     position:'المديرة التنفيذي'
   },{
     name:'امل محمد',
     age:27,
-    image:'/images/workers/amal.png',
+    image:'../images/workers/amal.png',
     position:'محللة بيانات'
   },
 ]

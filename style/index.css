@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 *,
 *::before,
 *::after {
@@ -5,10 +7,12 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  outline: none;
   border: none;
+  list-style: none;
+  scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 body{
   display:flex;
@@ -20,15 +24,28 @@ body{
   width: 95%;
 }
 
-.site-navigation{
+.site-navigation > :last-child{
   display:flex;
   justify-content: flex-end;
+  align-items: center;
+
+}
+
+.site-navigation > :first-child{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.site-navigation{
+  display:flex;
+  justify-content: space-between;
   align-items: center;
   height: 60px;
   background-color: #2f2d2d;
   width: 100%;
   color: white;
   margin-bottom: 20px;
+  transition: 0.5s ease-in;
 }
 
 .site-sections{
@@ -253,6 +270,9 @@ body{
   border:1px solid
 }
 
+.row-3 input{
+  width: 100% !important;
+}
 
 .contact-form > :first-child{
   display: flex;
@@ -277,8 +297,11 @@ form {
 }
 
 form > div {
-  width: 100%;
   padding: 20px;
+}
+form > div > :first-child{
+  margin-right: 4px;
+  width: 50%;
 }
 
 input,
@@ -423,16 +446,14 @@ select::-ms-expand {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border:1px solid;
 }
 
 .branch-container{
   width: 100%;
-  border:1px solid
 }
 
 .branch-container > img{
-  width:700px;
+  width:900px;
   height: 500px;
 }
 
@@ -441,25 +462,6 @@ select::-ms-expand {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  user-select: none;
-  outline: none;
-  border: none;
-  list-style: none;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
 }
 
 table {
@@ -529,4 +531,30 @@ tbody tr:not(:first-child) td:not(:first-child) {
 .table-header{
   text-align: center;
   margin: 20px 0;
+}
+
+.branches-portfolio{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.branches-portfolio > div{
+  overflow: hidden;
+}
+
+.branches-portfolio img{
+  width:100%;
+  height: 300px;
+  transition: 1s;
+}
+
+.branches-portfolio img:hover{
+  transform: scale(1.1);
+}
+
+.portfolio-title{
+  text-align: center;
+  margin:20px 0;
 }
